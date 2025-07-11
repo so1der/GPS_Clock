@@ -1,5 +1,7 @@
 # GPS_Clock
 
+![Main photo](https://raw.githubusercontent.com/so1der/GPS_Clock/refs/heads/main/images/clock.jpg "Main photo")
+
 So this is a simple clock that uses a GPS module NEO-6M to obtain precise time. It also uses 20x4 Char LCD screen to display time, date, and quantity of GPS satellites. As an MCU it uses STM32 Blue Pill - STM32F103C8T6. 
 
 Features:
@@ -14,6 +16,8 @@ I've chosen this MCU because it has its own RTC inside. Indeed, NEO-6M has its o
 ## Schematic 
 
 The connections should be as follows:
+
+![Schematic](https://raw.githubusercontent.com/so1der/GPS_Clock/refs/heads/main/images/schematic.png "Schematic")
 
 Since it takes precise time from satellites, and automatically chooses the correct timezone/summer time, it doesn't need any buttons.
 
