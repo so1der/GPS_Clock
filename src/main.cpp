@@ -37,7 +37,7 @@ const uint32_t update_interval = 500;
 const uint8_t dim_start_hour = 22; // The hour when the nighttime begins (backlights dimms)
 const uint8_t dim_end_hour = 6; // The hour when the nighttime ends  (backlights brighten)
 const uint8_t day_dim = 255; // Daytime backlight brightness   (0 - minimum, 255 - maximum)
-const uint8_t night_dim = 1; // Nighttime backlight brightness (0 - minimum, 255 - maximum)
+const uint8_t night_dim = 20; // Nighttime backlight brightness (0 - minimum, 255 - maximum)
 const uint8_t min_sats_to_calibrate_time = 6; // Minimum number of satellites for time calibration
 // ========================================
 
