@@ -23,7 +23,7 @@ Since it takes precise time from satellites, and automatically chooses the corre
 
 ## Code
 
-In the `main.cpp` file there is a block of code, where you can change various things:
+In the [`main.cpp`](https://github.com/so1der/GPS_Clock/blob/main/src/main.cpp#L36) file there is a block of code, where you can change various things:
 
 ```cpp
 // ============ User Settings =============
@@ -35,7 +35,7 @@ const uint8_t min_sats_to_calibrate_time = 6; // Minimum number of satellites fo
 // ========================================
 ```
     
-There is also a timezone definition using a library called `Timezone`. You need to define your time zones because satellites return time in UTC. For example, I defined two time zones for Ukraine, when they will start,  which offset they use, etc:
+There is also a timezone definition using a library called [`Timezone`](https://github.com/JChristensen/Timezone). You need to define your time zones because satellites return time in UTC. For example, I defined two time zones for Ukraine, when they will start,  which offset they use, etc:
 
 ```cpp
 TimeChangeRule uaDST = {"EEST", Last, Sun, Mar, 3, 180}; // EEST = UTC+3 = 180 minutes
@@ -46,7 +46,7 @@ Timezone uaZone(uaDST, uaSTD);
 
 ## Compile
 
-To compile this project, you'll need PlatformIO. Just open this git repo as a PlatformIO project, compile it, and upload. There are also different STM32 chips on the Blue Pill board, STM32F103**C6**T8 and STM32F103**C8**T6. By default, STM32F103**C8**T6 is defined in the `platformio.ini` file, but if you have an STM32F103**C6**T8, you'll need to change `board` in it:
+To compile this project, you'll need [PlatformIO](https://platformio.org/). Just open this git repo as a PlatformIO project, compile it, and upload. There are also different STM32 chips on the Blue Pill board, STM32F103**C6**T8 and STM32F103**C8**T6. By default, STM32F103**C8**T6 is defined in the `platformio.ini` file, but if you have an STM32F103**C6**T8, you'll need to change `board` in it:
 
 STM32F103**C8**T6:
 
