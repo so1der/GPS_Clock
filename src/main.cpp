@@ -95,7 +95,7 @@ void draw_date() {
         date_buf,
         sizeof(date_buf),
         "%-10s%02d.%02d.%4d",
-        days_of_the_week[weekday(local_time)],
+        days_of_the_week[weekday(local_time) -1],
         day(local_time),
         month(local_time),
         year(local_time)
